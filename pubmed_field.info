@@ -1,0 +1,4 @@
+name = PubMed Field
+description = This module provides a field/widget to specify terms for a PubMed query. The results of the query will be associated to the node.
+core = 7.x
+package = "wizper"

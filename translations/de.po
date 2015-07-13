@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wizper\n"
+"POT-Creation-Date: 2012-04-12 10:52+0200\n"
+"PO-Revision-Date: 2012-04-12 11:22+0100\n"
+"Last-Translator: David Nellessen <info@davidn.de>\n"
+"Language-Team:  <info@davidn.de>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: pubmed_field.entrezclient.inc:449
+msgid "No web environment set."
+msgstr "Keine Web Umgebung gesetzt."
+
+#: pubmed_field.module:18
+msgid "PudMed Term"
+msgstr "PudMed Term"
+
+#: pubmed_field.module:19
+msgid "Stores PubMed terms used for querying the PubMed database (http://www.ncbi.nlm.nih.gov/pubmed?term=)"
+msgstr "Speichert PubMed Terms für eine Query auf die PubMed Datenbank (http://www.ncbi.nlm.nih.gov/pubmed?term=)"
+
+#: pubmed_field.module:41
+msgid "Error message"
+msgstr "Fehlermeldung"
+
+#: pubmed_field.module:65
+msgid "Simple list of links to the publications given by querying the PubMed db using this field`s input as the term."
+msgstr "Einfache Liste aller Links zu den Publikationen, die durch die Query der PubMed Datenbank nach dem eingegebenen Term gefunden werden."
+
+#: pubmed_field.module:144
+msgid "Textfield"
+msgstr "Textfeld"
+
+#: pubmed_field.module:169
+msgid "PubMed Search Term"
+msgstr "PubMed Suchbegriff"
+
+#: pubmed_field.module:173
+msgid "Put in the search term for a PubMed query. The results will be listed. If you don`t know what to put in visit"
+msgstr "Gib den Suchbegriff für einen PubMed-Suche ein. Das Ergebnis der Suche wir ausgegeben. Wenn  du nicht weißt, was du eingeben sollst, besuche"
+
+#: pubmed_field.module:175
+msgid "Use <em>@example_term</em> to query all publications by author <em>@example_author</em> for example."
+msgstr "Benutze zum Beispiel <em>@example_term</em> um alle Publikationen des Autors <em>@example_author</em> zu listen."
+
+#: pubmed_field.module:177
+msgid "Note: The number of results will be limited to @max."
+msgstr "Achtung: Die Anzahl der Ergebnisse wird auf @max beschränkt."
+
+#: pubmed_field.module:186
+msgid "Autoupdate"
+msgstr "Autoupdate"
+
+#: pubmed_field.module:187
+msgid "Check this if you want to update results automatically once in a while."
+msgstr "Wähle diese Option, wenn die Ergebnisse regelmäßig automatisch aktualisiert werden sollen."
+
+#: pubmed_field.module:285
+msgid "The PubMed query could not be perfomed."
+msgstr "Die PubMed Anfrage konnte nicht durchgeführt werden."
+
+#: pubmed_field.module:244
+msgid "pubmed_field"
+msgstr "PubMed Field"
+
+#: pubmed_field.module:244
+msgid "Query pubmed for term: @term."
+msgstr "Durchsuche PudMed nach dem Begriff: @term."
+
+#: pubmed_field.info:0
+msgid "PubMed Field"
+msgstr "PubMed Field"
+
+#: pubmed_field.info:0
+msgid "This module provides a field/widget to specify terms for a PubMed query. The results of the query will be associated to the node."
+msgstr "Diese Modul bietet ein Feld und ein Widget um Publikationen der PubMed Datenbank anzuzeigen. Benutzer geben einen Suchbegriff im Widget ein und das Ergebnis der Suche wird im Frontend ausgegeben."
+
+#: pubmed_field.info:0
+msgid "wizper"
+msgstr "wizper"
+

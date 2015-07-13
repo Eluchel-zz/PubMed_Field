@@ -1,0 +1,61 @@
+<?php
+/**
+ * @file
+ * Install, update, and uninstall functions for the PubMed Field module.
+ */
+
+/**
+ * Implements hook_field_schema().
+ *
+ * Defines the database schema of the pubmed_field_pubmedids field.
+ */
+function pubmed_field_field_schema($field) {
+  if ($field['type'] == 'pubmed_field_term') {
+    $columns = array(
+      'pubmed_term' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => FALSE,
+        'description' => 'Term to use in a PubMed Query.',
+      ),
+      'pubmed_ids' => array(
+        'type' => 'blob',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Pubmed IDs',
+        'serialize' => TRUE,
+      ),
+      'autoupdate' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'not null' => FALSE,
+        'description' => 'Auto Update pubmed_ids form PubMed db?',
+      ),
+    );
+    $indexes = array(
+      'pubmed_term' => array('pubmed_term'),
+    );
+    return array(
+      'columns' => $columns, 
+      'indexes' => $indexes,
+    );
+  }
+}
+
+/**
+ * Implements hook_install().
+ */
+function pubmed_field_install() {
+  // Settings.
+  variable_set('pubmed_field_allow_autoupdate', TRUE);
+  variable_set('pubmed_field_limit_results', 100);
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function pubmed_field_uninstall() {
+  // Settings.
+  variable_del('pubmed_field_allow_autoupdate');
+  variable_del('pubmed_field_limit_results');
+}
